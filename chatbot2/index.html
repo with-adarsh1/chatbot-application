@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot - Voice Edition</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar glass">
+      <h2>💬 Chat History</h2>
+      <div id="history-list" class="history"></div>
+      <div class="sidebar-buttons">
+        <button id="new-chat-btn">🆕 New Chat</button>
+        <button id="clear-btn">🗑 Clear</button>
+      </div>
+    </aside>
+
+    <!-- Main Chat -->
+    <main class="chat-section glass">
+      <header class="chat-header">
+        <h1>🤖 AI Chatbot</h1>
+        <div class="controls">
+          <button id="theme-toggle" title="Toggle Theme">🌙</button>
+          <button id="voice-btn" title="Speak with AI">🎤</button>
+          <button id="upload-btn" title="Upload File">📎</button>
+          <input type="file" id="file-input" hidden accept="image/*,.txt,.pdf" />
+        </div>
+      </header>
+
+      <div id="chat-box" class="chat-box">
+        <div class="bot-message fade-in">👋 Hello! I'm your AI assistant. How can I help you today?</div>
+      </div>
+
+      <footer class="chat-input">
+        <input type="text" id="user-input" placeholder="Type or speak a message..." />
+        <button id="send-btn" class="floating-btn">➤</button>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
